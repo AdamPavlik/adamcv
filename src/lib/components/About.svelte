@@ -1,30 +1,37 @@
-<div class="max-w-3xl mx-auto space-y-4 text-gray-800">
-	<h2 class="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
+<div
+	class="mx-auto max-w-3xl p-6 space-y-6 rounded-lg bg-white shadow text-gray-800 leading-relaxed"
+>
+	<h2 class="mb-6 border-b pb-2 text-3xl font-extrabold text-gray-900">Hello, I'm Adam</h2>
 
 	<p>
-		With over 7 years of experience as a seasoned Java developer, I specialize in developing robust, scalable, and secure applications for enterprise-level clients. Currently, I am a software developer at DataArt, contributing to cutting-edge projects for Legal & General, a leading British financial services company.
+		I'm a Java developer with more than seven years of experience building secure and scalable
+		services for enterprise clients. At DataArt I help craft solutions for Legal &amp; General, one
+		of the UK's largest financial services companies.
 	</p>
 
 	<p>
-		I have spent the last nine months sharpening my skills in solution architecture through advanced EPAM training, enabling me to design efficient and scalable systems tailored to diverse business needs. My expertise lies in crafting microservices, optimizing cloud solutions, and architecting systems built to endure and evolve.
+		Last year I completed EPAM's advanced solution architecture program, deepening my knowledge of
+		cloud platforms and modern microservice design.
 	</p>
 
 	<p>
-		One of my notable achievements includes leading the development of a high-load platform for the BCM industry, capable of handling billions of messages monthly.
+		A career highlight was leading the creation of a high‑load messaging platform capable of
+		processing billions of events every month.
 	</p>
 
 	<p>
-		I am actively seeking consulting opportunities, freelance projects, and collaborations where my deep expertise in Java programming and solution architecture can tackle complex challenges in industries such as finance, healthcare, and e-commerce, particularly in optimizing system performance, scalability, and resilience. Let's connect to explore how I can help bring your vision to life.
+		I'm always interested in challenging freelance work and consulting engagements where I can apply
+		my expertise to improve system performance and reliability.
 	</p>
 
-	<div class="mt-6">
-		<h3 class="text-xl font-semibold mb-2">Key Skills:</h3>
+	<div class="rounded-lg bg-gray-50 p-4">
+		<h3 class="mb-3 text-xl font-semibold">Key Skills</h3>
 		<ul class="list-disc pl-5 space-y-1">
-			<li>Advanced Java Programming (6+ years)</li>
-			<li>Solution Architecture & Cloud Design</li>
-			<li>Enterprise Systems Development</li>
-			<li>Microservices & API Design</li>
-			<li>Agile & DevOps Practices</li>
+			<li>Java &amp; Spring Boot</li>
+			<li>Solution architecture and cloud design</li>
+			<li>Microservices &amp; API development</li>
+			<li>Agile and DevOps practices</li>
+			<li>Team leadership &amp; mentoring</li>
 		</ul>
 	</div>
 </div>
