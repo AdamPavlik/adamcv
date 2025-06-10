@@ -33,13 +33,13 @@
 	});
 </script>
 
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
 	<h2 class="text-3xl font-bold mb-10 relative">
 		<span class="inline-block pb-2 border-b-4 border-indigo-500">Certificates</span>
 	</h2>
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-		{#each certificates as certificate}
+		{#each certificates as certificate, i(i)}
 			<div
 				class="group bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200/50 flex flex-col h-full overflow-hidden"
 			>

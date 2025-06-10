@@ -1,4 +1,4 @@
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
 	<div
 		class="bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-200/50 hover:shadow-2xl transition-all duration-500"
 	>

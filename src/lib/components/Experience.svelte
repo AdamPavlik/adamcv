@@ -2,7 +2,7 @@
 	import { experienceList } from '$lib/components/data/experience';
 </script>
 
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
 	<h2 class="text-3xl font-bold mb-10 relative">
 		<span class="inline-block pb-2 border-b-4 border-indigo-500">Experience</span>
 	</h2>
