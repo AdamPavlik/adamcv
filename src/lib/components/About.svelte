@@ -127,6 +127,30 @@
 			</div>
 		</div>
 
+		<!-- CV Section -->
+		<div class="mt-8 pt-6 border-t border-gray-200/80">
+			<div class="flex items-center justify-between">
+				<div class="flex items-center gap-2">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					</svg>
+					<h4 class="text-lg font-bold text-gray-800">Curriculum Vitae</h4>
+				</div>
+				<a
+					href="https://adam-pavlik-assets.s3.eu-central-1.amazonaws.com/CV/AdamPavlikResumeSA.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					download
+					class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300"
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					</svg>
+					<span>Download CV</span>
+				</a>
+			</div>
+		</div>
+
 		<!-- Contact Section -->
 		<div class="mt-8 pt-6 border-t border-gray-200/80">
 			<h4 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
