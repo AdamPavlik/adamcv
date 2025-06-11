@@ -1,3 +1,8 @@
+<script>
+
+	import { skills } from '$lib/components/data/skills.js';
+</script>
+
 <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
 	<div
 		class="bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-200/50 hover:shadow-2xl transition-all duration-500"
@@ -19,16 +24,16 @@
 
 			<!-- Introduction -->
 			<div class="flex-grow text-center md:text-left">
-				<h3 class="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Solution Architect / Java Developer</h3>
+				<h3 class="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Solution Architect and Software
+					Engineer</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					With over 7 years of experience as a seasoned Java developer, I specialize in developing robust, scalable, and
-					secure applications for enterprise-level clients. Currently, I am a software developer at DataArt, contributing to
-					cutting-edge projects for Legal & General, a leading British financial services company.
+					With 8 years of experience designing and implementing robust, scalable, and secure enterprise systems.
+					Currently a Senior Software Engineer at DataArt, contributing to strategic projects for Legal & General, a
+					major UK financial services company.
 				</p>
 				<p class="text-gray-700 leading-relaxed">
-					I have spent the last nine months sharpening my skills in solution architecture through advanced EPAM training,
-					enabling me to design efficient and scalable systems tailored to diverse business needs. My expertise lies in
-					crafting microservices, optimizing cloud solutions, and architecting systems built to endure and evolve.
+					Certified in Solution Architecture by EPAM, specializing in microservices, AWS cloud-native architectures, and
+					high-performance, event-driven platforms.
 				</p>
 			</div>
 		</div>
@@ -55,7 +60,18 @@
 					Notable Achievements
 				</h4>
 				<ul class="list-disc pl-6 space-y-2 text-gray-700">
-					<li>Led the development of a high-load platform for the BCM industry, capable of handling billions of messages monthly.</li>
+					<li>Architected and delivered a real-time event-driven system using Kafka and Solace for processing
+						time-sensitive financial data.
+					</li>
+					<li>Designed and implemented a microservices-based architecture for a leading investment platform, improving
+						scalability and deployment speed.
+					</li>
+					<li>Successfully migrated critical infrastructure to AWS, leveraging serverless and containerized solutions to
+						reduce operational costs by 30%.
+					</li>
+					<li>Conducted system design sessions and C4 modeling workshops to align engineering and business teams on
+						technical vision.
+					</li>
 				</ul>
 			</div>
 			<!-- Seeking Opportunities -->
@@ -78,8 +94,9 @@
 					Seeking Opportunities
 				</h4>
 				<p class="text-gray-700 leading-relaxed">
-					Actively seeking consulting, freelance, and collaborative projects in finance, healthcare, and e-commerce to tackle
-					complex challenges in system performance, scalability, and resilience.
+					Actively pursuing Solution Architect roles—consulting, freelance, or long-term—within finance, healthcare, and
+					e-commerce sectors. Focused on designing scalable, high-performance systems and solving complex challenges in
+					distributed architectures, cloud-native solutions, and enterprise integration.
 				</p>
 			</div>
 		</div>
@@ -96,34 +113,15 @@
 				>
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
 				</svg>
-				Key Skills
+				Skills
 			</h4>
 			<div class="flex flex-wrap gap-2">
+				{#each skills as skill, i (i)}
 				<span
-					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60"
-				>
-					Advanced Java Programming (6+ years)
+					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60">
+					{skill}
 				</span>
-				<span
-					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60"
-				>
-					Solution Architecture & Cloud Design
-				</span>
-				<span
-					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60"
-				>
-					Enterprise Systems Development
-				</span>
-				<span
-					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60"
-				>
-					Microservices & API Design
-				</span>
-				<span
-					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60"
-				>
-					Agile & DevOps Practices
-				</span>
+				{/each}
 			</div>
 		</div>
 
@@ -131,8 +129,10 @@
 		<div class="mt-8 pt-6 border-t border-gray-200/80">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-2">
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600" fill="none" viewBox="0 0 24 24"
+							 stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 					</svg>
 					<h4 class="text-lg font-bold text-gray-800">Curriculum Vitae</h4>
 				</div>
@@ -144,7 +144,8 @@
 					class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300"
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 					</svg>
 					<span>Download CV</span>
 				</a>
