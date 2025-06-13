@@ -1,5 +1,4 @@
 <script>
-
 	import { skills } from '$lib/components/data/skills.js';
 </script>
 
@@ -115,13 +114,32 @@
 				</svg>
 				Skills
 			</h4>
-			<div class="flex flex-wrap gap-2">
-				{#each skills as skill, i (i)}
-				<span
-					class="px-3 py-1.5 text-slate-700 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-full hover:bg-white/60">
-					{skill}
-				</span>
-				{/each}
+			<div
+				class="group w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
+			>
+				<div
+					class="flex items-center justify-center md:justify-start animate-infinite-scroll group-hover:[animation-play-state:paused]"
+				>
+					{#each skills as skill, i (i)}
+						<span
+							class="mx-2 flex-shrink-0 rounded-full border border-slate-200/50 bg-white/40 px-4 py-2 font-medium text-slate-700"
+						>
+							{skill}
+						</span>
+					{/each}
+				</div>
+				<div
+					class="flex items-center justify-center md:justify-start animate-infinite-scroll group-hover:[animation-play-state:paused]"
+					aria-hidden="true"
+				>
+					{#each skills as skill, i (i)}
+						<span
+							class="mx-2 flex-shrink-0 rounded-full border border-slate-200/50 bg-white/40 px-4 py-2 font-medium text-slate-700"
+						>
+							{skill}
+						</span>
+					{/each}
+				</div>
 			</div>
 		</div>
 
@@ -237,3 +255,18 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	@keyframes infinite-scroll {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-100%);
+		}
+	}
+	.animate-infinite-scroll {
+		animation: infinite-scroll 120s linear infinite;
+		white-space: nowrap;
+	}
+</style>

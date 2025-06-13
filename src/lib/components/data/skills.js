@@ -12,7 +12,6 @@ export const skills = [
 	"JavaScript",
 	"Typescript",
 	"Spring",
-	"Framework",
 	"Hibernate",
 	"Docker",
 	"Kubernetes",
