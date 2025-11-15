@@ -23,16 +23,17 @@
 
 			<!-- Introduction -->
 			<div class="flex-grow text-center md:text-left">
-				<h3 class="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Solution Architect and Software
-					Engineer</h3>
+				<h3 class="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">
+					Solution Architect and Software Engineer
+				</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					With 8 years of experience designing and implementing robust, scalable, and secure enterprise systems.
-					Currently a Senior Software Engineer at DataArt, contributing to strategic projects for Legal & General, a
-					major UK financial services company.
+					With 8 years of experience designing and implementing robust, scalable, and secure
+					enterprise systems. Currently a Senior Software Engineer at DataArt, contributing to
+					strategic projects for Legal & General, a major UK financial services company.
 				</p>
 				<p class="text-gray-700 leading-relaxed">
-					Certified in Solution Architecture by EPAM, specializing in microservices, AWS cloud-native architectures, and
-					high-performance, event-driven platforms.
+					Certified in Solution Architecture by EPAM, specializing in microservices, AWS
+					cloud-native architectures, and high-performance, event-driven platforms.
 				</p>
 			</div>
 		</div>
@@ -59,17 +60,21 @@
 					Notable Achievements
 				</h4>
 				<ul class="list-disc pl-6 space-y-2 text-gray-700">
-					<li>Architected and delivered a real-time event-driven system using Kafka and Solace for processing
-						time-sensitive financial data.
+					<li>
+						Architected and delivered a real-time event-driven system using Kafka and Solace for
+						processing time-sensitive financial data.
 					</li>
-					<li>Designed and implemented a microservices-based architecture for a leading investment platform, improving
-						scalability and deployment speed.
+					<li>
+						Designed and implemented a microservices-based architecture for a leading investment
+						platform, improving scalability and deployment speed.
 					</li>
-					<li>Successfully migrated critical infrastructure to AWS, leveraging serverless and containerized solutions to
-						reduce operational costs by 30%.
+					<li>
+						Successfully migrated critical infrastructure to AWS, leveraging serverless and
+						containerized solutions to reduce operational costs by 30%.
 					</li>
-					<li>Conducted system design sessions and C4 modeling workshops to align engineering and business teams on
-						technical vision.
+					<li>
+						Conducted system design sessions and C4 modeling workshops to align engineering and
+						business teams on technical vision.
 					</li>
 				</ul>
 			</div>
@@ -93,9 +98,10 @@
 					Seeking Opportunities
 				</h4>
 				<p class="text-gray-700 leading-relaxed">
-					Actively pursuing Solution Architect roles—consulting, freelance, or long-term—within finance, healthcare, and
-					e-commerce sectors. Focused on designing scalable, high-performance systems and solving complex challenges in
-					distributed architectures, cloud-native solutions, and enterprise integration.
+					Actively pursuing Solution Architect roles—consulting, freelance, or long-term—within
+					finance, healthcare, and e-commerce sectors. Focused on designing scalable,
+					high-performance systems and solving complex challenges in distributed architectures,
+					cloud-native solutions, and enterprise integration.
 				</p>
 			</div>
 		</div>
@@ -110,7 +116,12 @@
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 				>
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M13 10V3L4 14h7v7l9-11h-7z"
+					/>
 				</svg>
 				Skills
 			</h4>
@@ -147,10 +158,19 @@
 		<div class="mt-8 pt-6 border-t border-gray-200/80">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center gap-2">
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600" fill="none" viewBox="0 0 24 24"
-							 stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5 text-slate-600"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+						/>
 					</svg>
 					<h4 class="text-lg font-bold text-gray-800">Curriculum Vitae</h4>
 				</div>
@@ -161,9 +181,19 @@
 					download
 					class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300"
 				>
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+						/>
 					</svg>
 					<span>Download CV</span>
 				</a>
@@ -186,7 +216,12 @@
 						stroke-width="2"
 						d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
 					/>
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+					/>
 				</svg>
 				Contact Information
 			</h4>
@@ -209,7 +244,9 @@
 							d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 						/>
 					</svg>
-					<span class="text-gray-700 group-hover:text-gray-900 font-medium">adam.zxzzx@gmail.com</span>
+					<span class="text-gray-700 group-hover:text-gray-900 font-medium"
+						>adam.zxzzx@gmail.com</span
+					>
 				</a>
 
 				<a

@@ -9,20 +9,21 @@
 
 	<div class="relative">
 		<!-- Vertical Timeline Bar -->
-		<div class="hidden sm:block absolute left-6 -ml-px w-0.5 h-full bg-gray-200" aria-hidden="true" />
+		<div
+			class="hidden sm:block absolute left-6 -ml-px w-0.5 h-full bg-gray-200"
+			aria-hidden="true"
+		/>
 
 		<ol class="flex flex-col gap-12">
-			{#each experienceList as experience}
+			{#each experienceList as experience (`${experience.company}-${experience.title}-${experience.timeRange}`)}
 				<li class="relative sm:pl-20">
 					<!-- Logo and Timeline Dot -->
-					<div
-						class="hidden sm:flex absolute top-0 left-0 w-12 h-12 items-center justify-center"
-					>
+					<div class="hidden sm:flex absolute top-0 left-0 w-12 h-12 items-center justify-center">
 						<div
 							class="w-full h-full bg-white rounded-lg shadow-md flex items-center justify-center ring-4 ring-white/80"
 						>
 							<img
-								src="{experience.imageUrl}"
+								src={experience.imageUrl}
 								alt="{experience.company} Logo"
 								class="w-10 h-10 object-contain rounded-md"
 							/>
@@ -40,9 +41,7 @@
 								>{experience.timeRange}</time
 							>
 						</div>
-						<h4
-							class="text-lg font-semibold text-indigo-700 mb-4 pb-3 border-b border-gray-200/80"
-						>
+						<h4 class="text-lg font-semibold text-indigo-700 mb-4 pb-3 border-b border-gray-200/80">
 							{experience.company}
 						</h4>
 						<p class="mb-5 text-gray-700 leading-relaxed">{experience.description}</p>
@@ -67,7 +66,7 @@
 									Key Responsibilities:
 								</h5>
 								<ul class="list-disc pl-5 space-y-1.5 text-sm text-gray-700">
-									{#each experience.responsibilities as responsibility}
+									{#each experience.responsibilities as responsibility, ri (ri)}
 										<li>{responsibility}</li>
 									{/each}
 								</ul>
@@ -92,7 +91,7 @@
 									Key Achievements:
 								</h5>
 								<ul class="list-disc pl-5 space-y-1.5 text-sm text-gray-700">
-									{#each experience.achievements as achievement}
+									{#each experience.achievements as achievement, ai (ai)}
 										<li>{achievement}</li>
 									{/each}
 								</ul>
@@ -118,7 +117,7 @@
 								Skills:
 							</h5>
 							<div class="flex flex-wrap gap-2">
-								{#each experience.skills as skill}
+								{#each experience.skills as skill, si (si)}
 									<span
 										class="px-3 py-1 bg-blue-100/70 text-blue-800 text-xs font-medium rounded-full"
 									>

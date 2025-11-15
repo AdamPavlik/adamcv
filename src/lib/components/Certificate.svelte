@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { certificates } from '$lib/components/data/certificate';
 	import { onMount } from 'svelte';
+	import { resolve } from '$app/paths';
 
 	// State for the full-size image modal
 	let showModal = false;
@@ -39,7 +40,7 @@
 	</h2>
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-		{#each certificates as certificate, i(i)}
+		{#each certificates as certificate, i (i)}
 			<div
 				class="group bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200/50 flex flex-col h-full overflow-hidden"
 			>
@@ -80,7 +81,9 @@
 					>
 						{certificate.title}
 					</h3>
-					<p class="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">{certificate.description}</p>
+					<p class="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
+						{certificate.description}
+					</p>
 
 					<!-- Certificate Details -->
 					<div class="space-y-2 mb-4">
@@ -145,7 +148,7 @@
 					<!-- Action Buttons -->
 					<div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-gray-200/80">
 						<a
-							href={certificate.verificationLink}
+							href={resolve(certificate.verificationLink)}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="flex-1 px-4 py-2 text-slate-900 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-lg hover:bg-white/60 transition-colors duration-300 inline-flex items-center justify-center text-center"
@@ -154,7 +157,7 @@
 						</a>
 						{#if certificate.pdfUrl}
 							<a
-								href={certificate.pdfUrl}
+								href={resolve(certificate.pdfUrl)}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="flex-1 px-4 py-2 text-slate-700 font-medium bg-white/20 border border-slate-200/30 backdrop-blur-md rounded-lg hover:bg-white/30 transition-colors duration-300 inline-flex items-center justify-center text-center"
@@ -175,10 +178,11 @@
 		class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md transition-opacity duration-300"
 		on:click={closeModal}
 	>
-		<div class="relative max-w-4xl w-full" on:click|stopPropagation>
+		<div class="relative inline-block max-w-[90vw]" on:click|stopPropagation>
 			<!-- Close Button -->
 			<button
-				class="absolute -top-4 -right-4 z-10 p-2 bg-white shadow-lg text-gray-700 hover:text-red-600 rounded-full transition-all duration-200"
+				class="absolute top-2 right-2 z-10 p-2 bg-white/95 shadow-lg text-gray-700 hover:text-red-600 rounded-full transition-all duration-200"
+				aria-label="Close"
 				on:click={closeModal}
 			>
 				<svg
@@ -194,7 +198,11 @@
 			</button>
 
 			<!-- Full-size Image -->
-			<img src={selectedImage} alt="Certificate Full View" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl" />
+			<img
+				src={selectedImage}
+				alt="Certificate Full View"
+				class="block max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+			/>
 		</div>
 	</div>
 {/if}

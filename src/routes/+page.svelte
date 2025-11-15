@@ -11,4 +11,3 @@
 	<Education />
 	<Certificate />
 </div>
-
