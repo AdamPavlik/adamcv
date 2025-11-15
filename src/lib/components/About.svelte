@@ -2,7 +2,7 @@
 	import { skills } from '$lib/components/data/skills.js';
 </script>
 
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
+<section class="w-full max-w-full md:max-w-[90%] mx-auto px-1 sm:px-4 py-5">
 	<div
 		class="bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-200/50 hover:shadow-2xl transition-all duration-500"
 	>

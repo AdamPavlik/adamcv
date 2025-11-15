@@ -31,6 +31,14 @@ export default ts.config(
 				parser: ts.parser,
 				svelteConfig
 			}
+		},
+		rules: {
+			'svelte/no-navigation-without-resolve': [
+				'error',
+				{
+					allowExternal: true
+				}
+			]
 		}
 	}
 );

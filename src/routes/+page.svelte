@@ -6,7 +6,7 @@
 	import Assistant from '$lib/components/Assistant.svelte';
 </script>
 
-<div class="space-y-20">
+<div class="space-y-10">
 	<About />
 	<Assistant />
 	<Experience />

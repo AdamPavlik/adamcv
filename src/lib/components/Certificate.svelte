@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { certificates } from '$lib/components/data/certificate';
 	import { onMount } from 'svelte';
-	import { resolve } from '$app/paths';
 
 	// State for the full-size image modal
 	let showModal = false;
@@ -25,6 +24,21 @@
 		}
 	}
 
+	// Handle keyboard events for clickable divs
+	function handleImageKeydown(event: KeyboardEvent, imageUrl: string) {
+		if (event.key === 'Enter' || event.key === ' ') {
+			event.preventDefault();
+			openImageModal(imageUrl);
+		}
+	}
+
+	function handleModalBackdropKeydown(event: KeyboardEvent) {
+		if (event.key === 'Enter' || event.key === ' ') {
+			event.preventDefault();
+			closeModal();
+		}
+	}
+
 	// Add and remove event listeners
 	onMount(() => {
 		window.addEventListener('keydown', handleKeydown);
@@ -34,7 +48,7 @@
 	});
 </script>
 
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
+<section class="w-full max-w-full md:max-w-[90%] mx-auto px-1 sm:px-4 py-1">
 	<h2 class="text-3xl font-bold mb-10 relative">
 		<span class="inline-block pb-2 border-b-4 border-indigo-500">Certificates</span>
 	</h2>
@@ -47,7 +61,11 @@
 				<!-- Certificate Image -->
 				<div
 					class="relative h-56 overflow-hidden cursor-pointer"
+					role="button"
+					tabindex="0"
+					aria-label="View full-size image of {certificate.title}"
 					on:click={() => openImageModal(certificate.imageUrl)}
+					on:keydown={(e) => handleImageKeydown(e, certificate.imageUrl)}
 				>
 					<img
 						alt={certificate.title}
@@ -148,7 +166,7 @@
 					<!-- Action Buttons -->
 					<div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-gray-200/80">
 						<a
-							href={resolve(certificate.verificationLink)}
+							href={certificate.verificationLink}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="flex-1 px-4 py-2 text-slate-900 font-medium bg-white/40 border border-slate-200/50 backdrop-blur-md rounded-lg hover:bg-white/60 transition-colors duration-300 inline-flex items-center justify-center text-center"
@@ -157,7 +175,7 @@
 						</a>
 						{#if certificate.pdfUrl}
 							<a
-								href={resolve(certificate.pdfUrl)}
+								href={certificate.pdfUrl}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="flex-1 px-4 py-2 text-slate-700 font-medium bg-white/20 border border-slate-200/30 backdrop-blur-md rounded-lg hover:bg-white/30 transition-colors duration-300 inline-flex items-center justify-center text-center"
@@ -176,9 +194,14 @@
 {#if showModal}
 	<div
 		class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md transition-opacity duration-300"
+		role="dialog"
+		aria-modal="true"
+		aria-label="Certificate full-size view"
+		tabindex="-1"
 		on:click={closeModal}
+		on:keydown={handleModalBackdropKeydown}
 	>
-		<div class="relative inline-block max-w-[90vw]" on:click|stopPropagation>
+		<div class="relative inline-block max-w-[90vw]" on:click|stopPropagation role="none">
 			<!-- Close Button -->
 			<button
 				class="absolute top-2 right-2 z-10 p-2 bg-white/95 shadow-lg text-gray-700 hover:text-red-600 rounded-full transition-all duration-200"
