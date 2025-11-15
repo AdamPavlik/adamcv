@@ -10,6 +10,7 @@
 	<nav class="sticky top-3 z-40 mx-auto w-fit flex gap-4 px-6 py-2 bg-white/60 backdrop-blur-md rounded-full shadow-sm ring-1 ring-white/30 text-sm font-medium">
 		<a href="/" class="px-2 py-1 rounded-full transition-colors { $page.url.pathname === '/' ? 'bg-blue-600/10 text-blue-800' : 'hover:bg-blue-50/60 hover:text-blue-700' }">Home</a>
 		<a href="/about" class="px-2 py-1 rounded-full transition-colors { $page.url.pathname.startsWith('/about') ? 'bg-blue-600/10 text-blue-800' : 'hover:bg-blue-50/60 hover:text-blue-700' }">About</a>
+		<a href="/assistant" class="px-2 py-1 rounded-full transition-colors { $page.url.pathname.startsWith('/assistant') ? 'bg-blue-600/10 text-blue-800' : 'hover:bg-blue-50/60 hover:text-blue-700' }">AI Assistant</a>
 		<a href="/experience" class="px-2 py-1 rounded-full transition-colors { $page.url.pathname.startsWith('/experience') ? 'bg-blue-600/10 text-blue-800' : 'hover:bg-blue-50/60 hover:text-blue-700' }">Experience</a>
 		<a href="/certificate" class="px-2 py-1 rounded-full transition-colors { $page.url.pathname.startsWith('/certificate') ? 'bg-blue-600/10 text-blue-800' : 'hover:bg-blue-50/60 hover:text-blue-700' }">Certificates</a>
 	</nav>

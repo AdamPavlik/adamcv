@@ -55,6 +55,5 @@ export const certificates: Array<Certificate> = [
 		issuedDate: "Sep 2019",
 		verificationLink: "https://cp.certmetrics.com/amazon/en/public/verify/credential/MDHF7MW231B413C0",
 		expirationDate: "Sep 2022",
-	},
-
+	}
 ]
