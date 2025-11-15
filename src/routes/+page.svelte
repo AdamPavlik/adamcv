@@ -3,10 +3,12 @@
 	import Certificate from '$lib/components/Certificate.svelte';
 	import Experience from '$lib/components/Experience.svelte';
 	import Education from '$lib/components/Education.svelte';
+	import Assistant from '$lib/components/Assistant.svelte';
 </script>
 
 <div class="space-y-20">
 	<About />
+	<Assistant />
 	<Experience />
 	<Education />
 	<Certificate />
